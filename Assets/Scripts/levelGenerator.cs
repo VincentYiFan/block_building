@@ -41,20 +41,24 @@ public class levelGenerator : MonoBehaviour {
 
 		for(int y = 0; y < height; y++)
 		{
+			//float yPos = y;
+			//if(y == 0)
+			//{
+			//	elementHeight = floorHeight;
+			//}
+			//else if(y == 1)
+			//{
+			//	elementHeight = basementHeight;
+			//	yPos = floorHeight / 2 + basementHeight / 2;
+			//}
+			//else
+			//{
+			//	elementHeight = 1;
+			//}
+
 			float yPos = y;
-			if(y == 0)
-			{
-				elementHeight = floorHeight;
-			}
-			else if(y == 1)
-			{
-				elementHeight = basementHeight;
-				yPos = floorHeight / 2 + basementHeight / 2;
-			}
-			else
-			{
-				elementHeight = 1;
-			}
+			elementHeight = 1;
+			
 			for(int x = 0; x < width; x++)
 			{
 				for(int z = 0; z < width; z++)

@@ -793,6 +793,7 @@ GameObject:
   - component: {fileID: 534669905}
   - component: {fileID: 534669904}
   - component: {fileID: 534669903}
+  - component: {fileID: 534669906}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -831,8 +832,8 @@ Camera:
     y: 0
     width: 1
     height: 1
-  near clip plane: 10
-  far clip plane: 25
+  near clip plane: 5
+  far clip plane: 50
   field of view: 26.991467
   orthographic: 0
   orthographic size: 5
@@ -865,6 +866,20 @@ Transform:
   m_Father: {fileID: 1530306790}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 35, y: -45, z: 0}
+--- !u!114 &534669906
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 534669902}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b0467d07ea465a43b9919bff1c7f34c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_cameraSpeed: 7
+  m_cameraRotateSensitivty: 3
 --- !u!1 &730869115
 GameObject:
   m_ObjectHideFlags: 0
@@ -894,7 +909,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c2e0c008b0e9d5a469a31579519cc0c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mesh: {fileID: 100398, guid: 90d7e4592a71d64418482b29f3210cb0, type: 3}
+  mesh: {fileID: 100602, guid: 88d99f3263dff844db6c72a5e06f54fb, type: 3}
 --- !u!4 &730869117
 Transform:
   m_ObjectHideFlags: 0
@@ -1123,7 +1138,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 100000, guid: 780611a67e8e941a2b3aa96e5915a793, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 780611a67e8e941a2b3aa96e5915a793, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1851,7 +1866,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b8f1c4e2b8edd374fa2fdbaa3bb96569, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 7
+  speed: 5
 --- !u!1 &1574681426
 GameObject:
   m_ObjectHideFlags: 0

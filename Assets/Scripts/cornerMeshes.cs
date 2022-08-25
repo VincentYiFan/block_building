@@ -27,7 +27,15 @@ public class cornerMeshes : MonoBehaviour
 	{
 		Mesh result;
 
-		if(level > 1 && level < levelGenerator.instance.height)
+		if (meshes.TryGetValue(bitmask.ToString(), out result))
+		{
+			return result;
+		}
+
+		return null;
+
+		/*
+		if (level > 1 && level < levelGenerator.instance.height)
 		{
 			if(meshes.TryGetValue(bitmask.ToString(), out result))
 			{
@@ -61,6 +69,7 @@ public class cornerMeshes : MonoBehaviour
 		}
 
 		return null;
+		*/
 	}
 	
 }
